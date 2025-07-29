@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
+import { Test } from "./backend/controllers/reprobados.controller.js";
 //Importando librerias 
 
 dotenv.config(); //Trayendo configuración de librerias
@@ -18,4 +19,7 @@ app.use(cors()); //Dando seguridad al server
 app.listen(4000, ()=>{
     console.log("Se escucha el servidor correctamente.")
 }) //Escuchando al server 
+
+
+Test();
 
